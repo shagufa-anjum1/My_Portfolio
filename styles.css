@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background: white;
+    color: #05386B;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+}
+
+#hero span {
+    color: #379683;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#about, #skills, #projects, #contact {
+    background-color: #fff;
+    padding: 30px 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#skills li {
+    background-color: #379683;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+}
+
+.project a {
+    color: #379683;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    #about, #skills, #projects, #contact {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+    
+    #hero {
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    header {
+        text-align: left;
+        padding: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #about, #skills, #projects, #contact {
+        width: 95%;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero {
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #skills li {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .project h3 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+/* Existing CSS */
+
+.hero-img, .about-img, .contact-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+
+/* Style specific to the hero section */
+/* #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background: #5CDB95;
+} */
+ /* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #eaeaea;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    
+}
+hero-image {
+    padding-right: 200px;
+}
+
+/* #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* For Contact Section */
+/* #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+} */
+
+/* Responsive for Tablet */
+@media (max-width: 768px) {
+    .hero-img, .about-img, .contact-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+    .hero-img, .about-img, .contact-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Project Section Styling */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #379683;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive for Tablets */
+@media (max-width: 768px) {
+    .project {
+        width: 45%;
+    }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+    .project {
+        width: 100%;
+    }
+}
+/* Testimonials Section Styling */
+#testimonials {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive for Testimonials */
+@media (max-width: 768px) {
+    .testimonial {
+        max-width: 100%;
+    }
+}
+/* Resume Button Styling */
+#resume {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#resume .btn {
+    background-color: #379683;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resume .btn:hover {
+    background-color: #287056;
+}
+
+/* Mobile Responsive for Resume Button */
+@media (max-width: 480px) {
+    #resume .btn {
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+/* YouTube Channel Section */
+#youtube-channel {
+    padding: 50px 20px;
+    background-color: #f0f4f7;
+    text-align: center;
+}
+
+.youtube-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.youtube-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.youtube-text p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.youtube-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* YouTube Button Styling */
+#youtube-channel .btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#youtube-channel .btn:hover {
+    background-color: #cc0000;
+}
+
+/* Mobile Responsive for YouTube Section */
+@media (max-width: 768px) {
+    .youtube-content {
+        flex-direction: column;
+    }
+
+    .youtube-image img {
+        max-width: 100%;
+    }
+}
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-social-links {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-links a img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+/* Social Icons Hover Effect */
+.footer-social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-social-links {
+        position: static; /* Stack in mobile view */
+        margin-top: 10px;
+    }
+
+    .footer-social-links a img {
+        width: 25px; /* Adjust size for mobile */
+        height: 25px; /* Adjust size for mobile */
+    }
+}
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.contact-form {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* How to Reach Section */
+#how-to-reach {
+    padding: 30px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.about-content {
+    width: 50%;
+    padding-left: 20px;
+}
+

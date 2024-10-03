@@ -15,10 +15,13 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    height: 100px;
 }
 
 nav ul {
     list-style: none;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -29,6 +32,10 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+    font-size: 1.2rem;
+   
 }
 
 #hero {
@@ -40,6 +47,80 @@ nav ul li a {
 
 #hero h1 {
     font-size: 3.5rem;
+    margin-left: 50px;
+    
+}
+.about-content h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#skills h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.h2 h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.text h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+}
+ .contact-section .contact-form h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+}
+#resume h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;  
+}
+#youtube-channel .youtube-content .youtube-text h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+}
+
+#youtube-channel .youtube-content .youtube-text a{
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; 
+}
+#how-to-reach h2{
+    color: #05386B;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;  
 }
 #hero h3{
     font-size: 2rem;
@@ -53,6 +134,9 @@ nav ul li a {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     margin-top: 20px;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 100px;
 
 }
 
@@ -258,6 +342,11 @@ footer {
     justify-content: space-between;
     text-align: center;
     padding: 20px;
+    background-color: rgb(243, 223, 196);
+}
+#projects:hover{
+    background-color: white;
+    transition: 400ms;
 }
 
 .project {
@@ -267,6 +356,10 @@ footer {
     margin: 10px;
     width: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project:hover{
+    background-color: rgb(242, 210, 168);
+    transition: 400ms;
 }
 
 .project img {
@@ -313,6 +406,8 @@ footer {
     background-color: #f8f9fa;
     padding: 50px 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
     
 }
 
@@ -320,9 +415,12 @@ footer {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial:hover{
+    background-color: #81e2be;
+    transition: 300ms;
 }
 
 .testimonial img {
@@ -405,6 +503,7 @@ footer {
 .youtube-text p {
     font-size: 1.2rem;
     color: #333;
+    margin-bottom: 50px;
 }
 
 .youtube-image img {
@@ -426,6 +525,7 @@ footer {
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
+
 
 #youtube-channel .btn:hover {
     background-color: #cc0000;
@@ -461,6 +561,9 @@ footer {
     margin: 0 10px;
     display: inline-block;
     transition: transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .footer-social-links a img {
@@ -492,6 +595,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    background-color: white;
 }
 
 .skills-list {
@@ -518,24 +622,46 @@ footer {
     height: 120px;
     margin-right: 10px;
 }
-/* Contact Section */
+/* 
+/* Contact Section Layout */
 .contact-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 50px;
-    background-color: #f4f4f4;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Image - Left Side */
+.contact-image {
+    flex: 1;
+    margin-right: 20px;
 }
 
 .contact-image img {
     width: 100%;
-    max-width: 350px;
-    border-radius: 8px;
+    max-width: 400px;
+    height: auto;
+    
 }
 
+/* Contact Form - Right Side */
 .contact-form {
-    width: 50%;
-    padding-left: 20px;
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .contact-form form {
@@ -543,13 +669,68 @@ footer {
     flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+/* Labels and Input Fields */
+.contact-form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
 }
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Modern Submit Button */
+.contact-form button {
+    padding: 12px 200px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    align-self: flex-start;
+    
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-image {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+} */
+
 /* How to Reach Section */
 #how-to-reach {
     padding: 30px;
@@ -560,6 +741,8 @@ footer {
     margin: 0 10px;
     font-size: 1.5em;
     color: #333;
+    color: #287056;
+
 }
 /* About Section */
 .about-section {
@@ -574,10 +757,24 @@ footer {
     width: 100%;
     max-width: 350px;
     border-radius: 8px;
+    margin-left: 50px;
 }
 
 .about-content {
-    width: 50%;
-    padding-left: 20px;
-}
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: left;
+    margin-right: 100px;
 
+}
+.about-content span{
+    color: #05386B;
+    
+
+}
+.about-content h3{
+    color: #287056;
+}
